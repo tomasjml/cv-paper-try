@@ -1,0 +1,56 @@
+.App {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+}
+
+.paper {
+  position: relative;
+  margin: 40px auto;
+  padding: 15px;
+  width: 400px;
+  height: 350px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.paper::before,
+.paper::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.paper::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.paper::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.paper:hover::before,
+.paper:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.paper:hover::before {
+  left: 5px;
+}
+
+.paper:hover::after {
+  right: 5px;
+}
