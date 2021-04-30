@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock&display=swap");
+
 .App {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Overlock", cursive;
   text-align: center;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Source + Sans + Pro:300);
 
 html,
 body {
@@ -48,7 +47,7 @@ body {
 }
 
 .paper {
-  width: 35em;
+  width: 85%;
   height: 50em;
 
   background: #e8e8ea; /* Old browsers */
