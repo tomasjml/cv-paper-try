@@ -1,6 +1,11 @@
 import "./styles.css";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    document.title = "CV Paper Try";
+  }, []);
+
   return (
     <div className="App">
       <div className="paper">
